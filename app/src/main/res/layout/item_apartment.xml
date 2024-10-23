@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_apartment.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Apartment Image -->
+        <ImageView
+            android:id="@+id/apartmentImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Apartment Image"/>
+
+        <!-- Title and Address -->
+        <TextView
+            android:id="@+id/apartmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parkview Apartments"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/apartmentAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Meyappa Chettiar Rd - D13"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Details (Beds, Baths, etc.) -->
+        <TextView
+            android:id="@+id/apartmentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Beds · 2 Baths · 2,561 sqft"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/apartmentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$5,700/mo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
